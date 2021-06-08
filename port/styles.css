@@ -141,16 +141,19 @@ right:30%;
   padding-left:3%;
   margin-bottom: 10%;
 }
+.row{
+  text-align: center;
+}
 .far{
  font-size: 150px;
   color:#f8f5f1;
 
 }
-.fa-file-code{
+/*.fa-file-code{
   position:relative;
   bottom:8%;
   left:30%;
-}
+}*/
 .services-text{
   font-family: 'Playfair Display', serif;
   font-weight: bold;
@@ -169,16 +172,14 @@ right:30%;
   color:#f8f5f1;
 
 }
-.fa-database{
-  position:relative;
-  bottom:8%;
-  left:32%;
+/*.fa-database{
+  text-align: center;
 }
 .fa-layer-group{
   position:relative;
   bottom:8%;
   left:32%;
-}
+}*/
 /*skills*/
 .skills{
   padding-top: 8%;
