@@ -1,274 +1,482 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/56e64f4edd.js" crossorigin="anonymous"></script>
-  <!--Google Fonts-->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-
-  <!--CSS Stylesheets-->
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <link rel="stylesheet" href="port/styles.css" />
+  <link rel="stylesheet" href="myport/styles.css" />
 
   <title>Adeboye's Portfolio</title>
-  <link rel="icon"href="favicon-16x16.png">
 </head>
 
 <body>
-  <div class="container-fluid">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-secondary">
-      <a class="navbar-brand mb-0 h1 brand-name" href="#">My Portfolio</a>
+  <div class="container-fluid header">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+      <a class="navbar-brand mb-0 h1 brand-name text-secondary" href="#">My Portfolio</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#about-me" >About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="WEB DEVELOPMENT\Portfolio\cv.pdf">Cv</a>
+            <a class="nav-link " href="WEB DEVELOPMENT\Portfolio\cv.pdf" >Cv</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
+            <a class="nav-link " href="#skill" >Skills & Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link " href="#cer" >Certificates</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link " href="#pro-ject" >Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link " href="#cont">Contact</a>
           </li>
+          <li class="nav-item pt-1">
+            <button type="button" class="bot talk"><a class="bot-link" href="#">Talk To My Bot</a></button>
+          </li>
+
+
+
         </ul>
       </div>
     </nav>
+    <div class="video-text">
+
+      <video muted="muted" autoplay="" loop="loop" id="myvideo">
+      </video>
+
+      <div class="vid-txt">
+        <h1 class="time"></h1>
+        <h1 class="time-text"></h1>
+      </div>
+      <div class="type-writer">
+        <h1 class="border-text">I Am A <span id="mytext"></span></h1>
+      </div>
+    <button class="bio"type="button"><a class="bio-text"href="#about">View Bio</a></button>
+
+    </div>
   </div>
-  <div class="container-fluid back-image">
-    <p class="header-text">
-      Website Design <span class="line">|</span> Data Science <span class="line">|</span> Pythoneer<br />
-      <span class="intro-text">Hey, my name is <strong class="name">Adeboye</strong><span>
+
+
+<section id="about-me">
+
+  <div id="about" class="container-fluid">
+    <h1 class="headings">About Me</h1>
+    <hr />
+    <div class="row">
+      <div class=" boy-img col-lg-5" data-aos="fade-right"data-aos-duration="1400">
+        <div class="img-ic">
+
+          <img class="boye" src="boye.jpg" alt="adeboye" /><br />
+
+        </div>
+
+      </div>
+      <div class="col-lg-7"data-aos="fade-up"data-aos-duration="2000">
+        <p class="aboutme">
+          <span class="abt-txt">My name is <strong class="name"> Oyelola Adeboye</strong></span><br /><br />I am a coding enthuasist. The Coding world has really changed my perspective about different things, it has helped me identify things i did
+          not even know I had.
+          I am currently studying in Babcock University Ilisian Ogun State Nigeria. I am in my third year, studying computer science. I love mathematics, playing games, coding and reading. I am a friendly person. I love working with teams of the
+          same vision or goals as me. I am always eager to learn new things. I find the most passion in web designing and i have built several projects using HTML ,CSS, JS e.t.c.
+        </p>
+        <button type="button" class="btn-cv mor"><a class="cv-link" href="#">Download CV</a></button>
+        <div class="icons">
+          <a class="icon" href="https://twitter.com/OyelolaAdeboye" target="_blank"><i class="fab fa-twitter-square po position-twitter"></i></a>
+          <a class="icon" href="https://web.facebook.com/adeboye.oyelola" target="_blank"><i class="fab fa-facebook-square po position-facebook"></i></a>
+          <a class="icon" href="https://www.linkedin.com/in/adeboye-oyelola-7362b4202/" target="_blank"><i class="fab fa-linkedin po position-linkdeln"></i></a>
+          <a class="icon" href="https://www.instagram.com/_boyelola/" target="_blank"><i class="fab fa-instagram-square po  position-instagram"></i></a>
+          <a class="icon" href="https://github.com/Boye-dev" target="_blank"><i class="fab fa-github-square po position-github"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+<section id="skill">
+  <div id="s-s" class="container-fluid">
+    <h1 class="headings-odd">Skills & Services</h1>
+    <hr class="hr-odd hrs" />
+    <p class="skill-text" data-aos="zoom-in-up"data-aos-duration="500">
+      I have been developing myself with different skills, that will help me be a better programmer,and help me render my services well.
     </p>
-    <button type="button" class="button btn btn-outline-info btn-lg"><a class="bio" href="#about">View Bio</a></button>
+    <div class="row flip">
+      <div class="col-lg-4">
+        <div class="panels"data-aos="fade-right"data-aos-duration="1000">
+
+
+          <div class="front fl">
+            <div class="front-align">
+              <i class="far fars fa-file-code fa-4x"></i><br />
+              <h3 class="services-text">Web Development</h3>
+              <p class="fullstack">
+                I design complete web applications and websites, working on both the front end and the back end of the site.
+              </p>
+            </div>
+          </div>
+          <div class="back-measure bm">
+            <div class="back">
+              <p class="tools">
+                Tools
+              </p>
+              <p class="tool-items">
+                HTML
+              </p>
+              <div class="progress" style="height: 6px;">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+
+              </div>
+              <p class="percentages">90%</p>
+
+              <p class="tool-items">
+                CSS
+              </p>
+              <div class="progress" style="height: 6px;">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+
+              </div>
+              <p class="percentages">90%</p>
+
+              <p class="tool-items">
+                Javascript
+              </p>
+              <div class="progress" style="height: 6px;">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+
+              </div>
+              <p class="percentages">80%</p>
+
+              <p class="tool-items">
+                Wordpress
+              </p>
+              <div class="progress" style="height: 6px;">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+
+              </div>
+              <p class="percentages">70%</p>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="panels"data-aos="fade-up"data-aos-duration="1000">
+          <div class="front fl">
+            <div class="front-align">
+              <i class="fas fs fa-database fa-4x"></i><br />
+              <h3 class="services-text">Data Science & UI/UX</h3>
+              <p class="fullstack-data">
+                Generate algorithms to
+                find organizational solutions from data.Creating good User interfaces.
+              </p>
+            </div>
+          </div>
+          <div class="back-measure bm">
+            <div class="back">
+              <p class="tools">
+                Tools
+              </p>
+              <p class="tool-items">
+                Phython
+              </p>
+              <div class="progress" style="height: 6px;">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+
+              </div>
+              <p class="percentages">90%</p>
+
+              <p class="tool-items">
+                ML & DB
+              </p>
+              <div class="progress" style="height: 6px;">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+
+              </div>
+              <p class="percentages">90%</p>
+
+              <p class="tool-items">
+                Blender
+              </p>
+              <div class="progress" style="height: 6px;">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+
+              </div>
+              <p class="percentages">80%</p>
+
+              <p class="tool-items">
+                Adobe
+              </p>
+              <div class="progress" style="height: 6px;">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+
+              </div>
+              <p class="percentages">70%</p>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="panels other"data-aos="fade-up"data-aos-duration="1000">
+
+
+          <div class="front fl">
+            <div class="front-align">
+              <i class="fas fs fa-layer-group fa-4x"></i><br />
+              <h3 class="services-text">Other Languages</h3>
+              <p class="fullstack-other">
+                Basic Knowledge.These are just languages that i add to up my skill as a programmer
+              </p>
+            </div>
+          </div>
+          <div class="back-measure bm">
+            <div class="back">
+              <p class="tools">
+                Tools
+              </p>
+              <p class="tool-items">
+                C++
+              </p>
+              <div class="progress" style="height: 6px;">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+
+              </div>
+              <p class="percentages">70%</p>
+
+              <p class="tool-items">
+                JAVA
+              </p>
+              <div class="progress" style="height: 6px;">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+
+              </div>
+              <p class="percentages">80%</p>
+
+              <p class="tool-items">
+                Visual Bacic.Net
+              </p>
+              <div class="progress" style="height: 6px;">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+
+              </div>
+              <p class="percentages">60%</p>
+
+              <p class="tool-items">
+                C
+              </p>
+              <div class="progress" style="height: 6px;">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+
+              </div>
+              <p class="percentages">50%</p>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+    <p class="skill-text"data-aos="fade-up"data-aos-duration="1000">
+      I can also sing and dance😁
+    </p>
   </div>
-  <div class="container-fluid">
-    <section id="about">
-      <h1>My Profile</h1>
+  </section>
+
+  <section id="pro-ject">
+    <div class=" proj container-fluid">
+      <h1 class="headings">My Projects</h1>
       <hr />
-      <div class="row">
-        <div class="col-lg-6">
-          <img class="pic" src="boyeprofile.png" /><br />
-          <div class="icons">
-            <a class="icon" href="https://twitter.com/OyelolaAdeboye" target="_blank"><i class="fab fa-twitter-square fa-2x position-twitter"></i></a>
-            <a class="icon" href="https://web.facebook.com/adeboye.oyelola" target="_blank"><i class="fab fa-facebook-square fa-2x position-facebook"></i></a>
-            <a class="icon" href="https://www.linkedin.com/in/adeboye-oyelola-7362b4202/" target="_blank"><i class="fab fa-linkedin fa-2x position-linkdeln"></i></a>
-            <a class="icon" href="https://www.instagram.com/_boyelola/" target="_blank"><i class="fab fa-instagram-square fa-2x position-instagram"></i></a>
-            <a class="icon" href="https://github.com/Boye-dev" target="_blank"><i class="fab fa-github-square fa-2x position-github"></i></a>
+      <div class="row pro">
+        <div class="col-lg-4">
+          <div class="anim projects"data-aos="fade-right"data-aos-duration="1000">
+            <a href="https://theteendomkc.wordpress.com/" target="_blank">
+              <img class="teen" src="teendom.png" alt="teendom" />
+              <hr class="proj-line" />
+              <h3 class="teen-link">Teendom</h3>
+              <p class="teen-text">
+                A blog created with wordpress to interact with young people all over the globe.
+              </p>
+            </a>
+
           </div>
 
         </div>
-        <div class="col-lg-6 about-margin">
-          <p class="aboutme">
-            My name is <strong class="name"> Oyelola Adeboye Samuel<br /></strong><br />I am a coding enthuasist.The Coding world has really changed my perspective about different things,it has helped me identify things i did not even know I had.
-            I am currently studying in Babcock University Ilisian Ogun State Nigeria.I am in my third year, studying computer science.I love mathematics,playing games,coding and reading.I am a friendly person.I love working with teams of the
-            same vision or goals as me.I am always eager to learn new things.
-          </p>
-          <button type="button" class="button-cv btn btn-outline-info btn-lg"><a href="#">Download CV</a></button>
+        <div class="col-lg-4  ">
+          <div class="anim projects"data-aos="fade-up"data-aos-duration="1000">
+            <a href="#" target="_blank">
+              <img class="drum" src="drum.jpg" alt="drumkit" />
+              <hr class="proj-line" />
+              <h3 class="teen-link">Drum Kit</h3>
+              <p class="teen-text">
+                Just For Fun. A small drum kit. Can be used to practice,built with love :);
+              </p>
+            </a>
+
+          </div>
         </div>
+        <div class="col-lg-4 ">
+          <div class="anim projects"data-aos="fade-up"data-aos-duration="1000">
+            <a href="#" target="_blank">
+              <img class="simon-image" src="simon.jpg" alt="teendom" />
+              <hr class="proj-line" />
+              <h3 class="teen-link">Simon Game</h3>
+              <p class="teen-text">
+                The exciting electronic game in which players must repeat sequences of lights
+              </p>
+            </a>
+
+          </div>
+        </div>
+
       </div>
-    </section>
-  </div>
-  <div class="container-fluid services">
-    <section id="services">
-      <h1 class="services-header">My Services</h1>
-      <hr class="hr-services" />
-      <div class="row rowed">
-        <div class="col-lg-4 full">
-          <i class="far fa-file-code fa-10x"></i><br />
-          <h3 class="services-text">Fullstack Website Development</h3>
-          <p class="fullstack">
-            I design complete web applications and websites, working on both the front end (the side seen by visitors and clients) and the back end (the server-side portion) of the site or app.
-          </p>
-        </div>
-        <div class="col-lg-4 data">
-          <i class="fas fa-database fa-10x"></i><br />
-          <h3 class="services-text">Data Science</h3>
-          <p class="fullstack">
-            I can use programming languages and software tools such as Python to visualize data, identify meaningful patterns, and generate algorithms and experiments to
-            find and propose organizational solutions
-          </p>
-        </div>
-        <div class="col-lg-4 ui">
-          <i class="fas fa-layer-group fa-10x"></i><br />
-          <h3 class="services-text">UI/UX Design</h3>
-          <p class="fullstack">
-            I create user-friendly interfaces that enable users to
-            understand how to use complex technical products.
-          </p>
-        </div>
-      </div>
-    </section>
-  </div>
-  <div class="container-fluid skills">
-    <section id="skills">
-      <h1>My Skills</h1>
-      <hr />
-      <p class="skill-text">
-        I have been developing myself with different skills, that will help me be a better programmer,and help me render my services well.
-      </p>
       <div class="row">
-        <div class="col-lg-4 full">
-          <h3 class="skill-list">Fullstack Website Development</h3>
-          <ul id="skill">
-            <li class="list-items">
-              HTML
-            </li>
-            <li class="list-items">
-              CSS
-            </li>
-            <li class="list-items">
-              Javascript
-            </li>
-            <li class="list-items">
-              Wordpress
-            </li>
-            <li class="list-items">
-              Responsive Design
-            </li>
-          </ul>
 
-        </div>
-        <div class="col-lg-4 data">
-          <h3 class="skill-list">Data Science/ UI&UX</h3>
-          <ul id="skill">
-            <li class="list-items">
-              Python
-            </li>
-            <li class="list-items">
-              Excel
-            </li>
-            <li class="list-items">
-              ML & DB
-            </li>
-            <li class="list-items">
-              Adobe Photoshop
-            </li>
-            <li class="list-items">
-              Blender
-            </li>
+        <div class="col-lg-4 offset-lg-4">
+          <div class="anim projects"data-aos="fade-up"data-aos-duration="1000">
+            <a href="#" target="_blank">
+              <img class="port-img" src="portfolio.png" alt="teendom" />
+              <hr class="proj-line" />
+              <h3 class="teen-link">My Portfolio</h3>
+              <p class="teen-text">
+                My personal website designed with HTML,CSS.You are on it now😁
+              </p>
+            </a>
 
-          </ul>
-        </div>
-        <div class="col-lg-4 data">
-          <h3 class="skill-list">Other Languages</h3>
-          <ul id="skill">
-            <li class="list-items">
-              C
-            </li>
-            <li class="list-items">
-              C++
-            </li>
-            <li class="list-items">
-              JAVA
-            </li>
-            <li class="list-items">
-              Visual Basic.Net
-            </li>
-
-          </ul>
-
+          </div>
         </div>
       </div>
-      <p class="ending-skill">
-        I can also sing and dance😁
+    </div>
+
+  </section>
+
+
+
+  <section id="cer">
+    <div class="container-fluid certificates">
+      <h1 class="headings-odd">My Certificates</h1>
+      <hr class="hr-odd hrs" />
+      <p class="cert-gis"data-aos="fade-up"data-aos-duration="1400">
+        I am a self taught programmer with different cerificates, from different free tutorial sites
       </p>
-    </section>
-  </div>
-  <div class="container-fluid projects">
-    <section id="projects">
-      <h1 class="services-header">My Projects</h1>
-      <hr class="hr-projects" />
-      <div id="projects-c" class="carousel slide" data-ride="false">
-        <div class="carousel-inner">
+      <div id="certificates" class="carousel slide" data-ride="carousel" data-interval="5000">
+        <div class="carousel-inner"data-aos="fade-up"data-aos-duration="1400">
           <div class="carousel-item active">
-            <h3 class="teen">TEENDOM</h3>
-            <a href="https://theteendomkc.wordpress.com/" target="_blank"><img class="teendom" src="teendom.png" alt="teendom" /></a>
-            <p class="teen-text">
-              A blog created with wordpress to interact with young people all over the globe.
+            <img class="certificates-img" src="freecodecamp.jpg" alt="certificates" />
+            <p class="certificate-head">
+              Responsive Web Design<br /> <em class="click-cer"><a href="https://freecodecamp.org/certification/adeboyeoyelola/responsive-web-design" target="_blank" class="click-cer">click to verify</a></em>
             </p>
           </div>
+
 
           <div class="carousel-item">
-            <h3 class="teen">My Portfolio</h3>
-            <img class="teendom" src="portfolio.png" alt="portfolio" />
-            <p class="teen-text">
-              My portfolio website designed with HTML,CSS.You are on it now😁
+            <img class="certificates-img" src="javascript.jpg" alt="certificates" />
+            <p class="certificate-head">
+              Javascript<br /> <em class="click-cer"><a href="https://freecodecamp.org/certification/adeboyeoyelola/javascript-algorithms-and-data-structures" target="_blank" class="click-cer">click to verify</a></em>
+            </p>
+          </div>
+          <div class="carousel-item">
+            <img class="certificates-img" src="html.jpg" alt="certificates" />
+            <p class="certificate-head">
+              HTML <br /> <em class="click-cer"><a href="https://www.sololearn.com/Certificate/1014-16098004/jpg/" target="_blank" class="click-cer">click to verify</a></em>
+            </p>
+          </div>
+          <div class="carousel-item">
+            <img class="certificates-img" src="css.jpg" alt="certificates" />
+            <p class="certificate-head">
+              CSS<br /> <em class="click-cer"><a href="https://www.sololearn.com/Certificate/1023-16098004/jpg/" target="_blank" class="click-cer">click to verify</a></em>
+            </p>
+          </div>
+          <div class="carousel-item">
+            <img class="certificates-img" src="js.png" alt="certificates" />
+            <p class="certificate-head">
+              Javascript<br /> <em class="click-cer"><a href="https://www.sololearn.com/certificates/course/en/16098004/1024/landscape/png" target="_blank" class="click-cer">click to verify</a></em>
+            </p>
+          </div>
+          <div class="carousel-item">
+            <img class="certificates-img" src="jquery.jpg" alt="certificates" />
+            <p class="certificate-head">
+              JQuery <br /><em class="click-cer"><a href="https://www.sololearn.com/Certificate/1082-16098004/jpg/" target="_blank" class="click-cer">click to verify</a></em>
             </p>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#projects-c" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
+        <a class="carousel-control-prev" href="#certificates" role="button" data-slide="prev">
+          <span><i class="fa f-a fa-angle-left" aria-hidden="true"></i></span>
 
         </a>
-        <a class="carousel-control-next" href="#projects-c" role="button" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
+        <a class="carousel-control-next" href="#certificates" role="button" data-slide="next">
+          <span><i class="fa f-a fa-angle-right" aria-hidden="true"></i></span>
         </a>
 
       </div>
-    </section>
-  </div>
-  <div class="container-fluid contact">
-    <section id="contact">
-      <h1>Contact Me</h1>
-      <hr class="contact-line" />
-      <div class="row">
-        <div class="col-lg-4">
-          <i class="fas fa-envelope"></i>
+    </div>
+  </section>
+
+  <section id="cont">
+    <div class="cont container-fluid">
+      <h1 class="headings-odd">Contact Me</h1>
+      <hr class="hr-odd hrs" />
+      <div class="cont-row row">
+
+        <div class="col-lg-6"data-aos="fade-right"data-aos-duration="1400">
+          <i class="fas cor co fa-envelope"></i>
           <p class="contact-text">
             oyelolaboye@gmail.com
           </p>
-        </div>
-        <div class="col-lg-4">
-          <i class="fas fa-map-marker-alt"></i>
+          <i class="fas cor co fa-map-marker-alt"></i>
           <p class="contact-text">
             35, Fadehan Street New Oko Oba Lagos
           </p>
-        </div>
-        <div class="col-lg-4">
-          <i class="fas fa-phone-alt"></i>
+          <i class="fas cor co fa-phone-alt"></i>
           <p class="contact-text">
             07061071933
           </p>
         </div>
+        <div class="col-lg-6"data-aos="flip-left"data-aos-duration="1000">
+          <form action="mailto:oyelolaboye@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name</label><br />
+            <input type="text" name="name" class="forms inp" value="" placeholder="Enter Name" required><br />
+            <label for="email">Email</label><br />
+            <input type="email" name="email" class="forms inp" value="" placeholder="Enter Email" required><br />
+            <label for="message">Message</label><br />
+            <textarea name="message" class="texta" placeholder="Message" required></textarea><br />
+            <button type="submit" class="but btn-submit">Submit</button>
+          </form>
+        </div>
       </div>
-      <p class="skill-text">
-        <strong>Want to tell me something?</strong>
+      <p class="foot">
+        <em>Oyelola Adeboye| © 2021 All Rights Reserved</em>
       </p>
-      <form class="forms"action="mailto:oyelolaboye@gmail.com" method="post" enctype="text/plain" id="form1">
-        <input type="text" placeholder="Enter Name" name="Name" value="" required /><br />
-        <input type="email" placeholder="Email" name="Email" value="" required /><br />
-        <textarea name="Message" rows="8" cols="80" placeholder="Message" required></textarea><br />
-        <button class="btn btn-outline-info" type="submit">Send</button>
-        <input class="btn btn-outline-info " type="reset" value="Reset">
+    </div>
 
-      </form>
-    </section>
-  </div>
+  </section>
+
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="index.js" charset="utf-8"></script>
 </body>
-<div class="container-fluid footer">
-<footer>
-<p class="foot">
-  <em>Oyelola Adeboye| © 2021 All Rights Reserved</em>
-</p>
-</footer>
-  </div>
+
 </html>
